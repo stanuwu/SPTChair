@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyName>SPTChair</AssemblyName>
+        <Description>SPT Chair Plugin for Chairs in SPT</Description>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <TargetFramework>netstandard2.0</TargetFramework>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+        <PackageReference Include="BepInEx.Core" Version="5.*" />
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="libs" />
+		<Reference Include="aki-core">
+		  <HintPath>E:\Games\SPT\BepInEx\plugins\aki-core.dll</HintPath>
+		</Reference>
+		<Reference Include="aki-custom">
+		  <HintPath>E:\Games\SPT\BepInEx\plugins\aki-custom.dll</HintPath>
+		</Reference>
+		<Reference Include="aki-debugging">
+		  <HintPath>E:\Games\SPT\BepInEx\plugins\aki-debugging.dll</HintPath>
+		</Reference>
+		<Reference Include="aki-singleplayer">
+		  <HintPath>E:\Games\SPT\BepInEx\plugins\aki-singleplayer.dll</HintPath>
+		</Reference>
+		<Reference Include="Aki.Build">
+			<HintPath>Aku.Build.dll</HintPath>
+		</Reference>
+		<Reference Include="Aki.Common">
+			<HintPath>Aki.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Aki.Reflection">
+			<HintPath>Aki.Reflection.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Comfort">
+			<HintPath>Comfort.dll</HintPath>
+		</Reference>
+		<Reference Include="ConfigurationManager">
+			<HintPath>ConfigurationManager.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Numerics">
+			<HintPath>System.Numerics.dll</HintPath>
+		</Reference>
+    </ItemGroup>
+</Project>
