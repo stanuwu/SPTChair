@@ -27,6 +27,18 @@ namespace SPTChair.Util
             GUIUtility.RotateAroundPivot(-angle, from);
         }
 
+        public static void DrawSquare(Vector2 position, Vector2 size, Color color)
+        {
+            Color = color;
+            GUI.DrawTexture(new Rect(position.x, position.y, size.x, size.y), Texture2D.whiteTexture);
+        }
+
+        public static void DrawCenteredSquare(Vector2 position, Vector2 size, Color color)
+        {
+            Color = color;
+            GUI.DrawTexture(new Rect(position.x - (size.x / 2), position.y - (size.y / 2), size.x, size.y), Texture2D.whiteTexture);
+        }
+
         public static void DrawBox(Vector2 position, Vector2 size, float thickness)
         {
             GUI.DrawTexture(new Rect(position.x, position.y, size.x, thickness), Texture2D.whiteTexture);

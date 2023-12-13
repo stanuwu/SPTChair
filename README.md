@@ -7,4 +7,11 @@ SPTarkov Cheat
 - Crosshair
 - Tracers
 - Silent Aim
-- Radar (WIP)
+- Stamina
+- Speed
+- No Weight
+- No Fall
+- Corpse Esp
+- Extract Esp
+- Night Vision
+- Radar

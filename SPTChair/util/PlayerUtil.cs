@@ -1,6 +1,5 @@
 ﻿using EFT;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace SPTChair.Util;
 
